@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PokemonserviceProvider } from '../../providers/pokemonservice/pokemonservice';
+import {ViewPokemonDetailsPage} from '../view-pokemon-details/view-pokemon-details'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -30,6 +31,11 @@ export class HomePage {
     console.log(this.splittedUrl);
     this.pokemonId = this.splittedUrl[this.splittedUrl.length-2];
     console.log("Pokemon URL returned is:"+this.splittedUrl+" Pokemon id "+this.pokemonId);
-    return "../../assets/images/PokemonAsset/"+this.pokemonId+".png";
+    return "../../assets/images/PokemonAsset/thumbnails/"+this.pokemonId+".png";
   }
+
+  viewPokemonDetails(pokemon:any){
+    this.navCtrl.push(ViewPokemonDetailsPage,pokemon);
+  }
+
 }

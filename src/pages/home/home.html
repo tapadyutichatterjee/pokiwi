@@ -1,20 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Pokiwi</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Pokiwi!</h2>
-  
  <ion-list>
-  <ion-item *ngFor = "let pokemon of pokemonList">
+  <ion-item *ngFor = "let pokemon of pokemonList" >
     <ion-thumbnail item-start>
       <img src="{{getPokemonImageUrl(pokemon)}}">
     </ion-thumbnail>
     <h2>{{pokemon.name}}</h2>
-    <button ion-button clear item-end>View</button>
+    <button ion-button clear item-end (click) ="viewPokemonDetails(pokemon)">View</button>
   </ion-item>
 </ion-list>
-
 </ion-content>
