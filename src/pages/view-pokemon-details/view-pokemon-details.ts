@@ -47,7 +47,7 @@ export class ViewPokemonDetailsPage {
   }
 
    getPokemonImageUrl(pokemon:Pokemon){
-    return "../../assets/images/PokemonAsset/high-resolution/"+pokemon.id+".svg";
+    return "assets/images/PokemonAsset/high-resolution/"+pokemon.id+".svg";
   }
 }
 class PokemonDetails implements Pokemon{

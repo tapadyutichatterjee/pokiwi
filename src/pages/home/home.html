@@ -14,4 +14,15 @@
     <button ion-button clear item-end (click) ="viewPokemonDetails(pokemon)">View</button>
   </ion-item>
 </ion-list>
+
+<button ion-button icon-left clear (click)="previousPressed()" [disabled]="!isPreviousDisabled()">
+  <ion-icon name="arrow-round-back"></ion-icon>
+  Previous
+</button>
+
+<button ion-button icon-right (click)="nextPressed()" [disabled]="!isNextDisabled()">
+  Next
+  <ion-icon name="arrow-round-forward"></ion-icon>
+</button>
+
 </ion-content>
