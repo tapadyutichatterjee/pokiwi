@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { PokemonlistPage } from '../pages/pokemonlist/pokemonlist';
 import { TabsPage } from '../pages/tabs/tabs';
 import {ViewPokemonDetailsPage} from '../pages/view-pokemon-details/view-pokemon-details'
 
@@ -22,7 +23,8 @@ import { PokemonserviceProvider } from '../providers/pokemonservice/pokemonservi
     ContactPage,
     HomePage,
     TabsPage,
-    ViewPokemonDetailsPage
+    ViewPokemonDetailsPage,
+    PokemonlistPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { PokemonserviceProvider } from '../providers/pokemonservice/pokemonservi
     ContactPage,
     HomePage,
     TabsPage,
-    ViewPokemonDetailsPage
+    ViewPokemonDetailsPage,
+    PokemonlistPage
   ],
   providers: [
     StatusBar,

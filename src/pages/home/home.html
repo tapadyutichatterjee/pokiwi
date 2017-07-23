@@ -5,24 +5,11 @@
 </ion-header>
 
 <ion-content padding>
- <ion-list>
-  <ion-item *ngFor = "let pokemon of pokemonList" >
-    <ion-thumbnail item-start>
-      <img src="{{getPokemonImageUrl(pokemon)}}">
-    </ion-thumbnail>
-    <h2>{{pokemon.name}}</h2>
-    <button ion-button clear item-end (click) ="viewPokemonDetails(pokemon)">View</button>
-  </ion-item>
-</ion-list>
-
-<button ion-button icon-left clear (click)="previousPressed()" [disabled]="!isPreviousDisabled()">
-  <ion-icon name="arrow-round-back"></ion-icon>
-  Previous
-</button>
-
-<button ion-button icon-right (click)="nextPressed()" [disabled]="!isNextDisabled()">
-  Next
-  <ion-icon name="arrow-round-forward"></ion-icon>
-</button>
+ <p><b>
+   Welcome to Pokiwi , the Pokemon Wiki. Find all the details of your favourite pokemons in 
+   one place. Click the Pokemon Wiki button to view the complete list of pokemons in the Pokemon
+   Universe
+   </b>
+ </p>
 
 </ion-content>
